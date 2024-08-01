@@ -31,9 +31,7 @@ img_path = '/Users/hwanghyeonbin/report/report3-2/知能情報総合実験/folde
 
 # モデルのパスリスト
 model_paths = [
-    'models/vgg16_finetrained_prototype.h5',
-    'folders/models/vgg16_finetrained_epoch=10.h5',
-    'folders/models/vgg16_finetrained_epoch=16.h5'
+    'models/vgg16_finetrained_prototype.h5',  #分類に使いたいモデルのパスをここに入力
 ]
 
 # 結果をコンソールに出力
@@ -50,3 +48,4 @@ try:
             
 except Exception as e:
     print(f"Error processing file {img_path}: {e}")
+

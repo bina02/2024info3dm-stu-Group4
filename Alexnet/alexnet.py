@@ -73,9 +73,6 @@ model.compile(optimizer='adam',
 # モデルの学習
 history = model.fit(train_ds, validation_data=val_ds, epochs=100)
 
-# モデルの保存 (SavedModel形式)
-model.save('Alexnet/model/save_model')
-
 # モデルの保存 (HDF5形式)
 model.save('Alexnet/model/save_model.h5')
 
